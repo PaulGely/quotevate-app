@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/contexts/AuthContext';
 import { User } from '@/lib/types/auth';
 import { getAllUsers, deactivateUser } from '@/lib/firebase/firebaseUtils';
-import { UsersList } from '@/components/admin/UsersList';
-import { AdminStats } from '@/components/admin/AdminStats';
+import { UsersList } from './UsersList';
+import { AdminStats } from './AdminStats';
 
 export default function AdminDashboard() {
   const [users, setUsers] = useState<User[]>([]);

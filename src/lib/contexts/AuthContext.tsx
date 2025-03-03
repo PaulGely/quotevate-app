@@ -21,7 +21,7 @@ const defaultAuthContext: AuthContextType = {
   isAdmin: () => false,
 };
 
-const AuthContext = createContext<AuthContextType>(defaultAuthContext);
+export const AuthContext = createContext<AuthContextType>(defaultAuthContext);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

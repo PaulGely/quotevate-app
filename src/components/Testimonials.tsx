@@ -79,7 +79,7 @@ export default function Testimonials() {
               <div className="flex mb-4">{renderStars(testimonial.rating)}</div>
 
               <blockquote>
-                <p className="text-gray-600 leading-relaxed">"{testimonial.content}"</p>
+                <p className="text-gray-600 leading-relaxed">&ldquo;{testimonial.content}&rdquo;</p>
               </blockquote>
             </div>
           ))}
